@@ -9,7 +9,7 @@ const meta: Meta<typeof Header> = {
   component: Header,
   decorators: [
     (Story) => (
-      <div style={{ margin: '3em' }}>
+      <div style={{ margin: '4em' }}>
         {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
         <Story />
       </div>
