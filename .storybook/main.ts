@@ -9,6 +9,9 @@ const config: StorybookConfig = {
   // Required
   framework: '@storybook/nextjs',
   stories: ['./components/**/*.stories.@(js|jsx|ts|tsx)'],
+  features: {
+    buildStoriesJson: true,
+  },
   // Optional
   addons: ['@storybook/addon-essentials', "@storybook/addon-controls", {
     name: '@storybook/addon-styling',
@@ -22,6 +25,14 @@ const config: StorybookConfig = {
     autodocs: 'tag',
   },
   staticDirs: ['../public'],
+  refs: {
+    'design-system': {
+      title: 'Storybook Design System',
+      url:'https://master--648d802dd1e984fdf3352df9.chromatic.com/',
+      // expanded: false, // Optional, true by default
+    } 
+  },
+  
 };
 
 export default config;

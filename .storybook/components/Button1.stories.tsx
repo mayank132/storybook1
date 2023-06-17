@@ -2,7 +2,7 @@
  // @ts-nocheck
  import type { Meta,StoryObj } from '@storybook/react';
 
- import {Button} from './Button';
+ import {Button} from './Button1';
  
  const meta: Meta<typeof Button> = {
    component: Button,
@@ -15,8 +15,9 @@
      ),
    ],
    argTypes: {
-     variant: {
-       options: ['primary', 'secondary'],
+    backgroundColor: { control: 'color' },
+     size: {
+       options: ['small', 'medium','large'],
        control: { type: 'radio' },
      },
    },

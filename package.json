@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "sb dev",
-    "build-storybook": "sb build"
+    "build-storybook": "sb build",
+    "chromatic": "npx chromatic --project-token=chpt_e67ecfae47e63a9"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +25,7 @@
     "@storybook/nextjs": "^7.0.21",
     "chromatic": "^6.19.8",
     "storybook": "^7.0.21"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "storybook@1.0.0"
 }
